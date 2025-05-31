@@ -268,3 +268,112 @@ iframe {
 .main-button:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 1024px) {
+  .maps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  header h1,
+  .task h2,
+  .map-container h2 {
+    font-size: 2.5rem;
+  }
+
+  nav a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .maps {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .content-container,
+  .intro,
+  .contacts .content-container,
+  .overview {
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  header h1,
+  .task h2,
+  .map-container h2 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .map-container p,
+  p {
+    font-size: 1rem;
+  }
+
+  .overview h2 {
+    font-size: 1.25rem;
+  }
+
+  .main-button {
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .maps img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 120px;
+  }
+
+  header h1,
+  .task h2,
+  .map-container h2 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .main-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  .maps img {
+    height: 180px;
+  }
+}
