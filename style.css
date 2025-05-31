@@ -1,0 +1,239 @@
+img {
+  height: 250px;
+  width: auto;
+}
+
+.logo img {
+  height: auto;
+  width: 250px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.divider {
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  margin: 1rem auto;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  overflow-y: scroll;
+  min-height: 100vh;
+  position: relative;
+  background-color: #bfbfbf;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+header {
+  background: transparent;
+  text-align: center;
+  padding: 2rem 0 2rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  color: black;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+nav a.active {
+  color: white;
+  text-decoration: underline;
+}
+
+.intro,
+.contacts .content-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+  color: white;
+  margin-top: 3rem;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 0.6rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.302);
+  transform: scale(1.2);
+}
+
+.form {
+  height: 900px;
+}
+
+.maps {
+  background-color: #333;
+  color: #f0f0f0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  border-radius: 12px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.maps > div {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.maps h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.maps p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.maps img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: auto;
+}
+
+.maps img:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+iframe {
+  width: 1000px;
+  height: 800px;
+  box-shadow: none;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.overview {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem; 
+  color: #222;
+  line-height: 1.6;
+}
+
+.overview h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.overview p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.overview .introduction,
+.overview .opinion,
+.overview .tasks,
+.overview .final { 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.main-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  z-index: 999;
+}
+
+
+.main-button:hover {
+  transform: scale(1.1);
+}
