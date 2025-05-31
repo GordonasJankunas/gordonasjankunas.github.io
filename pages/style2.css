@@ -59,6 +59,33 @@ header h1 {
   color: black;
 }
 
+.task h2 {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.map-container h2 {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.map-container p {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 2rem;
+  text-align: center; 
+  padding: 0 1.5rem; 
+}
+
+
 p {
   font-size: 1.5rem;
 }
@@ -241,4 +268,3 @@ iframe {
 .main-button:hover {
   transform: scale(1.1);
 }
-
